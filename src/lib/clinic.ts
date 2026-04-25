@@ -1,9 +1,9 @@
 export const CLINIC = {
   name: "SmileCraft Dental",
   tagline: "Creating confident smiles every day",
-  phone: "+91 8106212677",
-  phoneTel: "tel:+918106212677",
-  whatsapp: "https://wa.me/918106212677",
+  phone: "+91 9876543210",
+  phoneTel: "tel:+919876543210",
+  whatsapp: "https://wa.me/919876543210",
   address: "Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033",
   area: "Jubilee Hills, Hyderabad",
   email: "hello@smilecraftdental.in",

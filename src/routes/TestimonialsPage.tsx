@@ -41,9 +41,13 @@ export default function TestimonialsPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <button className="inline-flex items-center gap-2 rounded-full bg-card border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
-              View more on Google <ExternalLink className="h-4 w-4" />
-            </button>
+            <a
+			href="https://www.google.com/maps"
+			target="_blank"
+			rel="noopener noreferrer"
+			className="inline-flex items-center gap-2 rounded-full bg-card border border-border px-6 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
+			View more on Google <ExternalLink className="h-4 w-4" />
+			</a>
           </div>
         </div>
       </section>
@@ -52,9 +56,14 @@ export default function TestimonialsPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Have a story to share?" description="If we made you smile, we'd love to hear about it. Your review helps another patient feel confident choosing SmileCraft." />
           <div className="mt-8 text-center">
-            <button className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft">
-              Leave a Google review
-            </button>
+            <a
+			href="https://www.google.com/maps"
+			target="_blank"
+			rel="noopener noreferrer"
+			className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft hover:opacity-90 transition"
+			>
+			Leave a Google review
+			</a>
           </div>
         </div>
       </section>

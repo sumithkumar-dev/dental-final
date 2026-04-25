@@ -34,7 +34,7 @@ export const TREATMENTS: Treatment[] = [
     icon: Shield,
     description: "Permanent tooth replacement with premium global implant systems and lifetime warranty.",
     long: "Replace missing teeth with titanium implants from globally trusted brands — a natural look, full chewing strength and a lifetime warranty.",
-    price: "₹24,999",
+    price: "₹25,000",
     duration: "Multi-visit",
   },
   {

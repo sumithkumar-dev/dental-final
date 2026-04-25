@@ -37,12 +37,12 @@ export default function HomePage() {
               </div>
 
               <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.05] text-balance">
-                Creating <span className="bg-gradient-brand bg-clip-text text-transparent">confident smiles</span> every day
+                Creating <span className="text-blue-700">confident smiles</span> every day
               </h1>
 
-              <p className="mt-5 text-lg text-muted-foreground max-w-xl text-balance">
-                Modern, painless, evidence-based dentistry in the heart of Hyderabad. Premium global materials, digital precision and a team that truly cares.
-              </p>
+              <p className="mt-5 text-lg text-muted-foreground max-w-xl text-balance">Trusted dental care in Hyderabad for families and individuals.
+			  From routine check-ups to advanced treatments, we focus on comfort, hygiene, and long-lasting results.
+			  </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3.5 text-base font-semibold text-primary-foreground shadow-card hover:shadow-glow transition-shadow">
@@ -136,9 +136,9 @@ export default function HomePage() {
                     <p className="text-xs text-muted-foreground">Starting from</p>
                     <p className="text-lg font-bold text-primary">{t.price}</p>
                   </div>
-                  <Link to="/treatments" className="text-sm font-semibold text-primary inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Learn more <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  <Link to="/treatments" className="text-sm font-semibold text-primary inline-flex items-center gap-1 group-hover:gap-2 transition-all underline underline-offset-4 hover:opacity-80">
+				  Learn more <ArrowRight className="h-4 w-4" />
+				  </Link>
                 </div>
               </article>
             ))}
@@ -236,11 +236,27 @@ export default function HomePage() {
           />
           <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: HeartPulse, t: "Truly Painless", d: "Topical numbing, single-tooth anesthesia and gentle techniques mean most patients feel nothing at all." },
-              { icon: Sparkles, t: "Modern Technology", d: "Digital X-rays, 3D scans, laser dentistry and Digital Smile Design — all under one roof." },
-              { icon: ShieldCheck, t: "Hospital-Grade Safety", d: "Autoclave sterilization, single-use instruments and HEPA-filtered air for every appointment." },
-              { icon: Clock, t: "Respect for Your Time", d: "Punctual appointments, same-day treatments where possible and transparent pricing — always." },
-            ].map((f) => (
+  {
+    icon: HeartPulse,
+    t: "Comfort-Focused Care",
+    d: "We use gentle techniques and effective numbing to make your treatment as comfortable as possible."
+  },
+  {
+    icon: Sparkles,
+    t: "Advanced Dental Equipment",
+    d: "Digital X-rays, intraoral scanners and modern tools help us diagnose accurately and treat efficiently."
+  },
+  {
+    icon: ShieldCheck,
+    t: "Strict Sterilization",
+    d: "All instruments are properly sterilized and safety protocols are followed for every patient."
+  },
+  {
+    icon: Clock,
+    t: "On-Time Appointments",
+    d: "We value your time with well-planned schedules and minimal waiting whenever possible."
+  }
+].map((f) => (
               <div key={f.t} className="rounded-2xl bg-card border border-border p-6 shadow-soft hover:shadow-card transition-shadow">
                 <div className="h-12 w-12 rounded-xl bg-primary-soft text-primary grid place-items-center">
                   <f.icon className="h-6 w-6" />
