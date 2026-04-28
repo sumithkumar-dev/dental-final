@@ -8,9 +8,9 @@ export function MobileBottomBar() {
       <div className="grid grid-cols-3 divide-x divide-border">
         <a
           href={CLINIC.phoneTel}
-          className="flex flex-col items-center justify-center py-3 gap-1 text-foreground active:bg-secondary"
+          className="flex flex-col items-center justify-center py-3 gap-1 bg-gradient-brand text-primary-foreground"
         >
-          <Phone className="h-5 w-5 text-primary" />
+          <Phone className="h-5 w-5" />
           <span className="text-[11px] font-semibold">Call</span>
         </a>
         <a
@@ -24,9 +24,9 @@ export function MobileBottomBar() {
         </a>
         <Link
           to="/contact"
-          className="flex flex-col items-center justify-center py-3 gap-1 bg-gradient-brand text-primary-foreground"
+          className="flex flex-col items-center justify-center py-3 gap-1 text-foreground active:bg-secondary"
         >
-          <CalendarDays className="h-5 w-5" />
+          <CalendarDays className="h-5 w-5 text-primary" />
           <span className="text-[11px] font-semibold">Book Now</span>
         </Link>
       </div>

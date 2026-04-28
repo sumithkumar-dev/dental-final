@@ -37,21 +37,25 @@ export default function HomePage() {
               </div>
 
               <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.05] text-balance">
-                Creating <span className="text-blue-700">confident smiles</span> every day
+                Advanced Dental Care <span className="text-blue-700">in Jubilee Hills,</span> Hyderabad
               </h1>
 
-              <p className="mt-5 text-lg text-muted-foreground max-w-xl text-balance">Trusted dental care in Hyderabad for families and individuals.
-			  From routine check-ups to advanced treatments, we focus on comfort, hygiene, and long-lasting results.
+              <p className="mt-5 text-lg text-muted-foreground max-w-xl text-balance">Pain-free treatments, modern technology, and quick appointments.
+			  Call Now to book an Appointment instantly.
 			  </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3.5 text-base font-semibold text-primary-foreground shadow-card hover:shadow-glow transition-shadow">
-                  <CalendarDays className="h-5 w-5" /> Book Appointment
-                </Link>
-                <a href={CLINIC.phoneTel} className="inline-flex items-center gap-2 rounded-full bg-card border border-border px-6 py-3.5 text-base font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
+                <a href={CLINIC.phoneTel} className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3.5 text-base font-semibold text-primary-foreground shadow-card hover:shadow-glow transition-shadow">
                   <Phone className="h-5 w-5" /> Call Now
                 </a>
+				<Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-card border border-border px-6 py-3.5 text-base font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
+                  <CalendarDays className="h-5 w-5" /> Book Appointment
+                </Link>
               </div>
+			  
+			  <p className="mt-4 text-sm text-muted-foreground">
+			  ✔ 5000+ Happy Patients &nbsp;&nbsp; ✔ 10+ Years Experience &nbsp;&nbsp; ✔ Same-Day Appointments
+			  </p>
 
               <div className="mt-10 grid grid-cols-3 gap-4 max-w-lg">
                 {[
